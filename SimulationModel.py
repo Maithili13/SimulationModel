@@ -253,7 +253,7 @@ class Student(sim.Component):
         if (env.now() % 6 == 0):
             # Sessions over a period of 6 weeks
             yield self.hold(serviceTimeInClass)
-            # Counter to track treated students in T2Lite
+            # Counter to track completed students in T2Lite
             global counterTandA
             # Counter incremented after a 6 week session
             counterTandA += 1
